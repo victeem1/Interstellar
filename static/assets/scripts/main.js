@@ -1,29 +1,3 @@
-// Ads
-document.addEventListener('DOMContentLoaded', function () {
-  if (localStorage.getItem('ad') === null) {
-    localStorage.setItem('ad', 'false')
-  }
-
-  if (localStorage.getItem('ad') === 'true') {
-    var advDiv = document.getElementById('adv')
-    if (advDiv) {
-      var script = document.createElement('script')
-      script.type = 'text/javascript'
-      script.src = ''
-      advDiv.appendChild(script)
-      console.log('Script inserted inside the adv div.')
-    }
-  }
-
-  if (localStorage.getItem('ad') === 'false') {
-    var advDiv = document.getElementById('adv')
-    if (advDiv) {
-      advDiv.remove()
-      console.log('The adv div has been removed.')
-    }
-  }
-})
-
 // Themes
 var themeid = localStorage.getItem('theme')
 themeEle = document.createElement('link')

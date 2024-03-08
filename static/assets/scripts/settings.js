@@ -1,31 +1,4 @@
-// Ads
-document.addEventListener('DOMContentLoaded', function () {
-  function adChange(selectedValue) {
-    if (selectedValue === 'off') {
-      localStorage.setItem('ad', 'false')
-    } else if (selectedValue === 'off') {
-      localStorage.setItem('ad', 'false')
-    }
-  }
 
-  var adTypeElement = document.getElementById('adType')
-
-  if (adTypeElement) {
-    adTypeElement.addEventListener('change', function () {
-      var selectedOption = this.value
-      adChange(selectedOption)
-    })
-
-    var storedAd = localStorage.getItem('ad')
-    if (storedAd === 'false') {
-      adTypeElement.value = 'off'
-    } else if (storedAd === 'false') {
-      adTypeElement.value = 'off'
-    } else {
-      adTypeElement.value = 'off'
-    }
-  }
-})
 // Key
 var eventKey = localStorage.getItem('eventKey') || '`'
 var pLink = localStorage.getItem('pLink') || 'https://classroom.google.com/'
